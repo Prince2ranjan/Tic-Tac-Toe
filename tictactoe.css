@@ -1,0 +1,87 @@
+ /* vh: viewport height that is height of web page excluding browser contents like tool bar , status bar ,etc
+ 1vh = 1% of viewport hieght. same for VW.
+  vm = lower value(VW,VH); */
+
+  *{
+    margin:0;
+    padding:0;
+  }
+
+  body{
+    background-color: #548687;
+    text-align: center;     /*brings everything to center not only text*/
+  }
+
+  .container{
+    height:70vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game{
+    height:60vmin;
+    width:60vmin;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:1.5vmin; 
+                       /*gap creates a gap between flex-items*/
+}
+
+.box{
+    height:18vmin;
+    width:18vmin;
+    border:none;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgb(0 0 0 0.3);
+    font-size: 8vmin;
+    color: #b0413e;
+    background-color: yellow;
+}
+
+#resetbtn{
+    padding:1rem;
+    font-size: 1.25rem;
+    border:none;
+    background-color: #191913;
+    color:white;
+    border-radius:1rem;
+}
+
+#newgame{
+  padding:1rem;
+  font-size: 1.25rem;
+  border:none;
+  background-color: #191913;
+  color:white;
+  border-radius:1rem;
+}
+
+#msg{
+  font-size: 8vmin;
+  color: yellow;
+}
+
+.msgcont{
+
+height: 100vmin;
+display:flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+ 
+}
+
+.hide{
+  display: none;
+}
+
+.red{
+  color:red;
+}
+
+.green{
+  color:green;
+}
